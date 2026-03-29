@@ -13,7 +13,7 @@ window.onload = function () {
             const div = document.createElement("div");
             div.className = "piece";
 
-            div.style.backgroundImage = "url('AA.jpeg')";
+            div.style.backgroundImage = "url('./AA.jpeg')";
             div.style.backgroundSize = "360px 360px";
             div.style.backgroundColor = "red"; // keeps red if image fails
 
@@ -45,7 +45,7 @@ window.onload = function () {
     }
 
     function goNext() {
-        window.location.href = "final.html";
+        window.location.href = "./final.html";
     }
 
     createPuzzle();
