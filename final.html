@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forever Us 💍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="center">
+
+    <div class="card fade">
+        <h1>Relationship Renewal Agreement 💖</h1>
+
+        <p>
+            I promise to love you more every day,<br>
+            stand by you always,<br>
+            annoy you just a little 😌,<br>
+            and choose you forever ❤️
+        </p>
+
+        <p><b>Validity:</b> Forever ♾️</p>
+
+        <button onclick="accept()">I Agree ❤️</button>
+    </div>
+
+    <script>
+        function accept() {
+            alert("Agreement successfully renewed 😍💖");
+        }
+
+        /* Floating hearts */
+        setInterval(() => {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerHTML = "❤️";
+            heart.style.left = Math.random() * 100 + "vw";
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 4000);
+        }, 300);
+    </script>
+
+</body>
+
+</html>
